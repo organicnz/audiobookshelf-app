@@ -36,4 +36,7 @@ end
 
 post_install do |installer|
   assertDeploymentTarget(installer)
+  
+  # Remove Pods xcuserdata to prevent scheme clutter
+  FileUtils.rm_rf(installer.pods_project.path.to_s + '/xcuserdata')
 end

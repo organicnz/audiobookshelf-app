@@ -86,6 +86,10 @@ sw.*
 # macOS
 .DS_Store
 
+# Xcode user data
+xcuserdata/
+*.xcuserdatad/
+
 # Vim swap files
 *.swp
 
