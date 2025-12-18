@@ -91,3 +91,5 @@ sw.*
 
 /resources/
 /android/app/release/
+# Signing keys and secrets
+keys/
