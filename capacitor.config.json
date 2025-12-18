@@ -1,5 +1,5 @@
 {
-  "appId": "com.audiobookshelf.app",
+  "appId": "club.foodshare.audiobookshelf",
   "appName": "audiobookshelf-app",
   "webDir": "dist",
   "plugins": {
