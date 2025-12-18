@@ -1,18 +1,31 @@
 {
-  "appId": "club.foodshare.audiobookshelf",
-  "appName": "audiobookshelf-app",
-  "webDir": "dist",
-  "plugins": {
-    "CapacitorHttp": {
-      "enabled": false
-    },
-    "StatusBar": {
-      "backgroundColor": "#232323",
-      "style": "DARK"
-    }
-  },
-  "server": {
-    "androidScheme": "http"
-  },
-  "packageClassList": ["FileSharerPlugin", "KeepAwakePlugin", "VolumeButtonsPlugin", "AppPlugin", "CAPBrowserPlugin", "ClipboardPlugin", "DialogPlugin", "HapticsPlugin", "CAPNetworkPlugin", "PreferencesPlugin", "StatusBarPlugin", "CDVPlugin"]
+	"appId": "club.foodshare.audiobookshelf",
+	"appName": "Foodshare Audiobookshelf",
+	"webDir": "dist",
+	"plugins": {
+		"CapacitorHttp": {
+			"enabled": false
+		},
+		"StatusBar": {
+			"backgroundColor": "#232323",
+			"style": "DARK"
+		}
+	},
+	"server": {
+		"androidScheme": "http"
+	},
+	"packageClassList": [
+		"FileSharerPlugin",
+		"KeepAwakePlugin",
+		"VolumeButtonsPlugin",
+		"AppPlugin",
+		"CAPBrowserPlugin",
+		"ClipboardPlugin",
+		"DialogPlugin",
+		"HapticsPlugin",
+		"CAPNetworkPlugin",
+		"PreferencesPlugin",
+		"StatusBarPlugin",
+		"CDVPlugin"
+	]
 }

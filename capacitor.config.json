@@ -1,6 +1,6 @@
 {
   "appId": "club.foodshare.audiobookshelf",
-  "appName": "audiobookshelf-app",
+  "appName": "Foodshare Audiobookshelf",
   "webDir": "dist",
   "plugins": {
     "CapacitorHttp": {
