@@ -39,6 +39,15 @@ jobs:
           cd ios/App
           pod install
 
+      - name: Disable sandbox for CocoaPods scripts
+        run: |
+          # Fix sandbox issues with CocoaPods script phases in Xcode 15+
+          cd ios/App
+          # Make scripts executable
+          find Pods -name "*.sh" -exec chmod +x {} \;
+          # Disable user script sandboxing
+          defaults write com.apple.dt.Xcode IDEBuildOperationMaxNumberOfConcurrentCompileTasks 4
+
       - name: Install Apple certificate and provisioning profile
         env:
           BUILD_CERTIFICATE_BASE64: ${{ secrets.BUILD_CERTIFICATE_BASE64 }}
@@ -72,6 +81,7 @@ jobs:
             -archivePath $RUNNER_TEMP/App.xcarchive \
             -sdk iphoneos \
             -destination generic/platform=iOS \
+            ENABLE_USER_SCRIPT_SANDBOXING=NO \
             clean archive
 
       - name: Export IPA
