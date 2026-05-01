@@ -1,6 +1,5 @@
 {
   "buildCommand": "cd web && npm install && npm run build",
-  "outputDirectory": "web/.output/public",
   "installCommand": "echo 'install handled in buildCommand'",
   "framework": null,
   "headers": [
